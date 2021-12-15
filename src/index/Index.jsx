@@ -20,17 +20,20 @@ export default function Index() {
     return (
         <div>
             {(state.characters) &&
-                state.characters.map((char, index) => (
-                    <React.Fragment key={index}>
-                        <div className="d-flex flex-row flex-nowrap bg-danger m-2">
+            <div className="d-flex flex-wrap justify-content-center mt-2">
+                {
+                    state.characters.map((char, index) => (
+                        <React.Fragment>
                             <Card
-                                image={char.image}
-                                title={char.name}
-                                width={'18rem'}
+                            image={char.image}
+                            title={char.name}
+                            width={'19rem'}
                             />
-                        </div>
-                    </React.Fragment>
-                ))
+                        </React.Fragment>
+                    ))
+                }
+            </div>
+            
             }
         </div>
     )
