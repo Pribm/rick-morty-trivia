@@ -1,7 +1,6 @@
 import axios from 'axios'
 import React from 'react'
 import Card from '../components/Card'
-import './index.css'
 import Slider from '../components/slider/Slider'
 
 export default function Index() {
@@ -13,7 +12,6 @@ export default function Index() {
 
     const [isLoading, setLoading] = React.useState(true)
     const [isLoadingMore, setLoadingMore] = React.useState(false)
-    const [sliderContainerHeight, setSliderContainerHeight] = React.useState(0)
 
     const slider = React.useRef(null)
 
@@ -61,9 +59,31 @@ export default function Index() {
                             image={char.image}
                             title={char.name}
                             >
-                                <h1>Status</h1>
-                                <h1>Status</h1>
-                                <h1>Status</h1>
+                                <div className="d-flex ">
+                                    <div className="p-2 rounded-2 m-2 text-center" style={{backgroundColor: '#b2dae4'}}>
+                                    <h6 className='me-2'>Status</h6>
+                                    <hr className='m-0'/>
+                                    <div className="d-flex align-items-center justify-content-center" style={{height: '60px'}}>
+                                        <h6 className='mt-1' style={{fontSize: '.7em'}}>{char.status}</h6>
+                                    </div>
+                                    </div>
+
+                                    <div className="p-2 rounded-2 m-2 text-center" style={{backgroundColor: '#f8fe76'}}>
+                                    <h6 className='me-2'>Species</h6>
+                                    <hr className='m-0'/>
+                                    <div className="d-flex align-items-center justify-content-center" style={{height: '60px'}}>
+                                        <h6 className='mt-1' style={{fontSize: '.7em'}}>{char.species}</h6>
+                                    </div>
+                                    </div>
+
+                                    <div className=" p-2 rounded-2 m-2 text-center" style={{backgroundColor: '#f9d9ca'}}>
+                                    <h6 className='me-2'>Origin</h6>
+                                    <hr className='m-0'/>
+                                    <div className="d-flex align-items-center justify-content-center" style={{height: '60px'}}>
+                                        <h6 className='mt-1' style={{fontSize: '.7em'}}>{char.origin.name}</h6>
+                                    </div>
+                                    </div>
+                                </div>
                             </Card>
                         </React.Fragment>
                     ))}
