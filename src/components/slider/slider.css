@@ -1,0 +1,19 @@
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slider-arrow {
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.274);
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1 all ease;
+}
+
+.slider-arrow:hover {
+    transform: scale(1.2)
+}
