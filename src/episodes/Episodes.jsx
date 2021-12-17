@@ -42,7 +42,7 @@ export default function Episodes() {
                     <h1>{ep.name}</h1>
                     <h4>Season {ep.ep.season}</h4>
                     <h4>Episode {ep.ep.episode}</h4>
-                    <a href={`https://embed.warezcdn.com/serie/tt2861424/${ep.ep.season}/${ep.ep.episode}`} target='_blank'>Watch</a>
+                    <iframe src={`https://embed.warezcdn.com/serie/tt2861424/${ep.ep.season}/${ep.ep.episode}`} frameborder="0"></iframe>
                 </div>
             ))}
             
