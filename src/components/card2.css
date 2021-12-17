@@ -27,6 +27,19 @@
      #ffffff 0px 2px 0px;
 }
 
+@media (max-width: 500px) {
+    .card-title-custom {
+        font-size: .8rem;
+        font-family: 'RickMorty', sans-serif;
+        color: #35C9DD;
+        text-shadow: #000000 1px 0px 0px,
+         #000000 -1px 0px 0px,
+         #000000 0px 1px 0px,
+         #000000 0px -1px 0px,
+         #ffffff 0px 2px 0px;
+    }
+}
+
 .bg-letter {
     background: no-repeat center;
     object-fit: contain;

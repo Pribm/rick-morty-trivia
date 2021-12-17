@@ -2,6 +2,16 @@
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.sliderContainer {
+    display: flex;
 }
 
 .slider-arrow {
