@@ -27,19 +27,22 @@ export default function Index() {
         })
     }, [])
 
+    React.useEffect(() => {
+        if(isLoadingMore){
+            axios.get('https://rickandmortyapi.com/api/character?page='+state.page)
+            .then(res => {
+                setLoadingMore(false)
+                let characters = res.data.results
+                setState({...state, characters: state.characters.concat(characters)})
+            })
+        }
+    }, [isLoadingMore])
+
     
 
     const changePage = () => {
         setLoadingMore(true)
         setState({...state, page: state.page+1})
-
-        axios.get('https://rickandmortyapi.com/api/character?page='+state.page)
-        .then(res => {
-            setLoadingMore(false)
-            let characters = res.data.results
-            setState({...state, characters: state.characters.concat(characters)})
-        })
-
     }
 
 
