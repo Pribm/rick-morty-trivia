@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Header() {
     return (
@@ -8,7 +9,7 @@ export default function Header() {
             </div>
 
             <div className='d-md-flex align-items-center mt-0 text-end ms-auto me-4 navbar-custom'>
-                <p className='mt-auto mb-auto mx-2'>Characters</p>
+                <Link to='/' className='mt-auto mb-auto mx-2'>Characters</Link>
                 <p className='mt-auto mb-auto mx-2'>Locations</p>
                 <p className='mt-auto mb-auto mx-2'>Episodes</p>
                 <p className='mt-auto mb-auto mx-2'>Link3</p>
