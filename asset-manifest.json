@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/rick-morty-trivia/static/css/main.eaf5e94b.css",
-    "main.js": "/rick-morty-trivia/static/js/main.f0c4b47c.js",
+    "main.js": "/rick-morty-trivia/static/js/main.6f756d2b.js",
     "static/media/Cartoon Toy.ttf": "/rick-morty-trivia/static/media/Cartoon Toy.330446ac0de02cad5fb2.ttf",
     "static/media/SolidCartoonlings.ttf": "/rick-morty-trivia/static/media/SolidCartoonlings.de33f82e922c645926af.ttf",
     "index.html": "/rick-morty-trivia/index.html",
     "main.eaf5e94b.css.map": "/rick-morty-trivia/static/css/main.eaf5e94b.css.map",
-    "main.f0c4b47c.js.map": "/rick-morty-trivia/static/js/main.f0c4b47c.js.map"
+    "main.6f756d2b.js.map": "/rick-morty-trivia/static/js/main.6f756d2b.js.map"
   },
   "entrypoints": [
     "static/css/main.eaf5e94b.css",
-    "static/js/main.f0c4b47c.js"
+    "static/js/main.6f756d2b.js"
   ]
 }
