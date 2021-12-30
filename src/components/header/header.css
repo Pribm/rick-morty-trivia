@@ -1,0 +1,30 @@
+.link::before{
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.link {
+    text-decoration: none;
+
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(24, 169, 206);
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+    color: rgb(15, 117, 143);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.link:hover::before{
+    background-image: url('/public/img/portal_gun__rick_and_morty__by_noctasun_dc9c63x-fullview.png');
+    background-size: 40px 40px;
+    background-position: right center;
+    display: inline-block;
+    width: 40px; 
+    height: 20px;
+    content:"";
+}

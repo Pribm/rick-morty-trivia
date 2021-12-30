@@ -1,0 +1,18 @@
+.loader-bg{
+    min-height: 100%;
+    min-width: 100vw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    background-color: rgb(25, 139, 15) !important;
+    border-radius: 200px;
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 0px 0px 0px 5px rgb(27, 105, 3);
+}

@@ -28,6 +28,7 @@ h5 {
     height: 90px;
     background-color: rgb(113, 204, 226);
     position: absolute;
+    z-index: 0;
 }
 
 .card-image {
@@ -37,7 +38,7 @@ h5 {
     object-fit: contain;
     position: center center;
     margin: 20px;
-    z-index: 100;
+    z-index: 1;
 }
 
 .divider {
@@ -57,11 +58,11 @@ h5 {
     cursor: pointer;
     transform: scale(1);
     -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-decoration: none;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .episodes:hover {

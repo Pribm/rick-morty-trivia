@@ -3,12 +3,18 @@
     src: local('SketchFont'), url(../fonts/SolidCartoonlings.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'cartoonToy';
+    src: local('cartoonToy'), url(../fonts/Cartoon\ Toy.ttf) format('truetype');
+}
+
 .tab-items {
     list-style: none;
     display: inline-block;
     margin: 0;
     padding: 0;
     z-index: 10;
+    margin-left: 2px;
 }
 
 .tab-item {
@@ -17,8 +23,15 @@
     border-radius: 10px 10px 0 0;
     margin: 0 -10px 0 0;
     position: relative;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.164);
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.164), 0px 4px 6px rgba(0, 0, 0, 0.164);
     cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.tab-item.active{
+    background-color: rgb(56, 172, 201);
+    color: white;
+    font-weight: bolder;
 }
 
 .episodes-list {
@@ -35,7 +48,7 @@
 }
 
 .episode-scroll {
-    background-color: rgb(1, 119, 17);
+    background-color: #f8f8de;
     width: 36%;
     height: 45%;
     position: absolute;
@@ -45,4 +58,157 @@
     font-family: SketchFont;
     color: white;
     line-height: 2em;
+    text-align: left;
+    scrollbar-width: none;
+}
+
+.epNumber {
+    color: #1596a5;
+    text-shadow: 0 2px 0 black;
+}
+
+.epName {
+    color: #af0f10;
+    text-shadow: 0 2px 0 black;
+    transition: all .5 ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.epName:hover {
+    color: #1596a5;
+    text-shadow: 0 2px 0 black;
+}
+
+.season-select-mobile {
+    background-color: #1596a5;
+    color: white;
+    font-weight: bolder;
+}
+
+.episodes-panel{
+    width: 70%;
+    background-color: #ccc;
+    display: inline-block;
+    height: 600px;
+    overflow: scroll;
+    scrollbar-width: 0;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.episodes_section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.episodes_section::-webkit-scrollbar {
+    display: none;
+}
+
+.player_top {
+    position: relative;
+}
+
+.player_image{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom top;
+}
+
+.dot_selection {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: palegreen;
+}
+
+.selected_season_mobile.active div{
+    background-color: mediumaquamarine;
+}
+
+.session_selector {
+    background-color: white;
+    position: absolute;
+    bottom: 3%;
+    width: 90%;
+    border-radius: 50px;
+    left: 5%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.322);
+}
+
+.selected_season_mobile {
+    cursor: pointer;
+}
+
+.selected_season_mobile span {
+    color: lightslategray;
+}
+
+.selected_season_mobile.active span {
+    color: mediumaquamarine;
+    font-weight: bold;
+}
+
+.episodes_section {
+    height: 600px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.episode_selector {
+    width: 85%;
+    border-radius: 120px;
+    margin-top: 15px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.055), 0 0 1px 1px rgba(0, 0, 0, 0.068);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.episode_text h6 {
+    font-size: .7em;
+    font-weight: bolder;
+    margin-top: 12px;
+}
+
+.episode_text p {
+    font-size: .8em;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+.player_thumb {
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.play_icon {
+    color:  rgb(56, 201, 141);
+    cursor: pointer;
+}
+
+.episodes-panel::-webkit-scrollbar {
+    display: none;
+  }
+
+@media (max-width: 420px) {
+    .season-select-mobile {
+        font-size: .9em !important;
+        
+    }
+
+    .episode-link-mobile{
+        text-align: start;
+        cursor: pointer;
+    }
+
+ 
 }

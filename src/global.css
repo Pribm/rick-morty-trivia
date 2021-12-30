@@ -1,0 +1,8 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    overflow: auto;
+    scrollbar-width: none; /* hide the scrollbar in FF */
+}

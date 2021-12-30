@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Secular+One&display=swap');
+
+.bg-main {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 13%, rgba(110,234,255,1) 13%, rgba(49,213,246,1) 88%, rgba(255,255,255,1) 88%, rgba(255,255,255,1) 100%);
+}
+
+.daily-quote{
+    font-family: 'Secular One', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.quote-name {
+    color: rgb(227, 255, 174);
+    font-size: 1.5em;
+}
+
+.character-status {
+    cursor: pointer;
+    color: #ccc;
+    width: 60px;
+    z-index: 1000;
+}
+
+.character-status:hover {
+    color: rgba(49,213,246,1);
+}
+
+.character-status.active {
+    color: rgba(49,213,246,1);
+}
+
+.status-icon {
+    font-size: 60px;
+}
+
+.status-text {
+    font-size: 1.5em !important;
+}
+
+@media (max-width: 412px) {
+
+    .character-status {
+        width: 40px;
+    }
+
+    .status-icon {
+        font-size: 40px;
+    }
+    
+    .status-text {
+        font-size: 1em !important;
+    }
+}

@@ -6,12 +6,13 @@ const Slider = React.forwardRef((props, ref) => {
 
     const slideButton = side => {
         props.scrollRef(ref)
-        console.log(ref.current)
+
         side === 'left' ? ref.current.scrollLeft -= (slide.current.firstChild.clientWidth * 3) : ref.current.scrollLeft += (slide.current.firstChild.clientWidth * 3)
     }
 
-    const slideWheel = deltaY => {
-        
+    const slideWheel = event => {
+        let deltaY = event.deltaY
+
         props.scrollRef(ref)
 
         if(deltaY > 0){
@@ -19,25 +20,28 @@ const Slider = React.forwardRef((props, ref) => {
         }else{
             ref.current.scrollLeft += (slide.current.firstChild.clientWidth * 3)
         }
+
+        
     }
 
     const slide = React.useRef(null)
 
+    
+
 
     return (
-        <div  onWheel={e => slideWheel(e.deltaY)}>
+        <div className='mb-4' style={{height: props.height, position: 'relative'}}>
 
             <div className="slider" ref={ref}>
                 <div className='sliderContainer' ref={slide}>
                     {props.children}
                 </div>
             </div>
-                
-            <div className='position-absolute d-flex justify-content-between align-items-center px-4' style={{ width: '100%', height: props.height, top: '45%', zIndex: 120}}>
+            <div className='position-absolute d-flex justify-content-between align-items-center px-4' style={{ width: '100%', top: 'calc(50% - 2em)', zIndex: '1000'}}>
                 <p className='slider-arrow'
                     onClick={() => {slideButton('left')}}
-                > <MdArrowLeft size='2rem' color='#03d3fc' /> </p>
-                <p className='slider-arrow'> <MdArrowRight size='2rem' color='#03d3fc'
+                > <MdArrowLeft size='2em' color='#03d3fc' /> </p>
+                <p className='slider-arrow'> <MdArrowRight size='2em' color='#03d3fc'
                     onClick={() => {slideButton('right') }}
                 /> </p>
             </div>

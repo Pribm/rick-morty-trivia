@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    /*justify-content: center;*/
 }
 
 .slider::-webkit-scrollbar {
@@ -11,6 +12,8 @@
 }
 
 .sliderContainer {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
 }
 
