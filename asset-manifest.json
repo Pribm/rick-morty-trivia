@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/rick-morty-trivia/static/css/main.eaf5e94b.css",
-    "main.js": "/rick-morty-trivia/static/js/main.fa7be99b.js",
+    "main.css": "/rick-morty-trivia/static/css/main.4b963745.css",
+    "main.js": "/rick-morty-trivia/static/js/main.cdb0bca3.js",
+    "static/media/static.gif": "/rick-morty-trivia/static/media/static.798bfa3008a6059469ba.gif",
     "static/media/Cartoon Toy.ttf": "/rick-morty-trivia/static/media/Cartoon Toy.330446ac0de02cad5fb2.ttf",
     "static/media/SolidCartoonlings.ttf": "/rick-morty-trivia/static/media/SolidCartoonlings.de33f82e922c645926af.ttf",
     "index.html": "/rick-morty-trivia/index.html",
-    "main.eaf5e94b.css.map": "/rick-morty-trivia/static/css/main.eaf5e94b.css.map",
-    "main.fa7be99b.js.map": "/rick-morty-trivia/static/js/main.fa7be99b.js.map"
+    "main.4b963745.css.map": "/rick-morty-trivia/static/css/main.4b963745.css.map",
+    "main.cdb0bca3.js.map": "/rick-morty-trivia/static/js/main.cdb0bca3.js.map"
   },
   "entrypoints": [
-    "static/css/main.eaf5e94b.css",
-    "static/js/main.fa7be99b.js"
+    "static/css/main.4b963745.css",
+    "static/js/main.cdb0bca3.js"
   ]
 }
