@@ -2,13 +2,14 @@ import React from 'react'
 import { MdArrowBack, MdPlayCircleOutline } from 'react-icons/md'
 
 export default function MobileEpisodePlaylist(props) {
+
     return (
         <>
             <div className="player_top">
                 {(props.showMobileEpisode === true) ?
                 <>
-                    <div style={{height: '100%', backgroundImage:'url("img/static.gif")', backgroundRepeat: 'no-repeat', backgroundSize: '100%'}}>
-                        <iframe  src={`https://embed.warezcdn.com/serie/tt2861424/${props.selectedSeason+1}/${props.selectedEpisode}`} frameBorder="0" allowFullScreen className='player_image'></iframe>
+                    <div className='iframe-wrapper'>
+                        <iframe src={`https://embed.warezcdn.com/serie/tt2861424/${props.selectedSeason+1}/${props.selectedEpisode}?sv=mixdrop`} allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' frameBorder="0" allowFullScreen></iframe>
                     </div>
                     <MdArrowBack style={{color: 'white', top: '10px', position: 'absolute', left: '10px'}} onClick={() => props.setShowMobileEpisode(false)}/>
                 </>

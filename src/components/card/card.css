@@ -19,8 +19,15 @@
 h5 {
     text-align: center;
     color: chocolate;
-    font-family: fantasy;
-    font-weight: 900 !important;
+    font-family: fantasy sans-serif;
+    font-weight: bold !important;
+    padding-inline: 5px;
+}
+
+h6{
+    font-size: .8em !important;
+    padding-inline: 5px;
+    text-align: center;
 }
 
 .color-top {

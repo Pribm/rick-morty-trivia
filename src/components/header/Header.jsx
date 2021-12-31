@@ -14,9 +14,9 @@ const linkComponent = props => {
 export default function Header() {
 
     return (
-        <div className='d-md-flex text-center' id='top'>
-            <div className='mt-4 mb-0 ps-4'>
-                <img src="img/logo.png" alt="logo" height='100'/>
+        <div className='d-md-flex text-center ' id='top'>
+            <div className='mt-4 mb-0 ps-4 '>
+                <img src="img/logo.png" alt="logo" height='100' />
             </div>
             <div className='d-flex justify-content-center align-items-center mt-0 ms-auto me-4 navbar-custom'>
                 <div>

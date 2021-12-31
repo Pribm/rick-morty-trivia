@@ -40,11 +40,11 @@
 @media (max-width: 412px) {
 
     .character-status {
-        width: 40px;
+        width: 10px;
     }
 
     .status-icon {
-        font-size: 40px;
+        font-size: 35px;
     }
     
     .status-text {

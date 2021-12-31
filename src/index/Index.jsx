@@ -229,6 +229,7 @@ export default function Index() {
                             location={char.location.name}
                             status={char.status}
                             eps={char.episode}
+                            scrollref={scrollRef}
                         >
                         </Card>
                     </React.Fragment>

@@ -120,6 +120,23 @@
     object-position: bottom top;
 }
 
+.iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+    background-image: url('/public/img/static.gif');
+}
+
+.iframe-wrapper iframe {
+    position: absolute;
+    width:100%;
+	height:100%;
+	left:0;
+	right:0;
+	margin:auto;
+}
+
 .dot_selection {
     width: 5px;
     height: 5px;
