@@ -193,6 +193,7 @@
     font-size: .7em;
     font-weight: bolder;
     margin-top: 12px;
+    text-align: start;
 }
 
 .episode_text p {
